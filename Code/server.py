@@ -8,8 +8,8 @@ class SmartHomeServer:
     def __init__(self, get_status_cb, send_command_cb):
         self.get_status = get_status_cb
         self.send_command = send_command_cb
-        self.wifi_ssid = 'Redmi Note 13 Pro+ 5G'
-        self.wifi_pass = '123456789'
+        self.wifi_ssid = '' #YOUR WIFI'S SSID
+        self.wifi_pass = '' #YOUR WIFI'S PASSWORD
         self.led = Pin("LED", Pin.OUT)
         
     def connect_wifi(self):
